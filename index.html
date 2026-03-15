@@ -5,56 +5,64 @@
   <title>ACE Foundation</title>
   <style>
     body {
-      background: #000;
-      color: #d0d0d0;
+      background: #f5f5f5;
+      color: #333;
       font-family: sans-serif;
-      max-width: 900px;
-      margin: 60px auto;
-      line-height: 1.7;
-      padding: 40px;
-      border: 1px solid #222;
-      border-radius: 10px;
+      margin: 0;
+      padding: 40px 0;
     }
 
-    /* Header layout: logga + text i rad */
+    .container {
+      background: #ffffff;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 50px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
     .header {
       display: flex;
       align-items: center;
       gap: 30px;
-      border-bottom: 1px solid #222;
-      padding-bottom: 30px;
       margin-bottom: 40px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #e5e5e5;
     }
 
     img.logo {
-      width: 180px;
-      filter: drop-shadow(0 0 12px rgba(255,255,255,0.25));
+      width: 140px;
+      border-radius: 4px;
     }
 
     .title-block h1 {
       margin: 0;
-      font-size: 1.8rem;
-      color: #fff;
-      letter-spacing: 0.6px;
-      text-align: left;
+      font-size: 2rem;
+      color: #222;
     }
 
     .title-block p {
-      margin: 8px 0 0;
-      max-width: 500px;
-      color: #c0c0c0;
-      text-align: left;
+      margin: 10px 0 0;
+      max-width: 520px;
+      color: #555;
+      line-height: 1.6;
     }
 
     h2 {
       margin-top: 40px;
-      color: #fff;
-      font-size: 1.2rem;
-      letter-spacing: 0.3px;
+      color: #222;
+      font-size: 1.3rem;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.6;
+      max-width: 700px;
     }
 
     a {
-      color: #66aaff;
+      color: #0066cc;
       text-decoration: none;
     }
 
@@ -65,34 +73,43 @@
     footer {
       margin-top: 60px;
       padding-top: 30px;
-      border-top: 1px solid #222;
-      font-size: 0.85rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 0.9rem;
       color: #777;
-      letter-spacing: 0.5px;
-      text-align: center;
+      text-align: left;
     }
   </style>
 </head>
 <body>
 
-  <div class="header">
-    <img class="logo" src="Foundation.jpg" alt="ACE Foundation logo">
+  <div class="container">
 
-    <div class="title-block">
-      <h1>ACE Foundation</h1>
-      <p>Applied Clarity & Evidence — a framework for transparent, reproducible and institutionally robust governance.</p>
+    <div class="header">
+      <img class="logo" src="Foundation.jpg" alt="ACE Foundation logo">
+
+      <div class="title-block">
+        <h1>ACE Foundation</h1>
+        <p>Applied Clarity & Evidence — a framework for transparent, reproducible and institutionally robust governance for CO₂e and environmental decision‑making.</p>
+      </div>
     </div>
+
+    <h2>About</h2>
+    <p>
+      ACE Foundation develops transparent, evidence‑based methodologies for CO₂e accounting, governance logic and institutional decision‑making. 
+      Our work focuses on clarity, reproducibility and auditability — enabling organisations to build climate strategies grounded in verifiable data and robust governance structures.
+    </p>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:info@acefoundation.net">info@acefoundation.net</a></p>
+
+    <h2>GitHub</h2>
+    <p><a href="https://github.com/ACE-Foundation">github.com/ACE-Foundation</a></p>
+
+    <footer>
+      ACE Foundation — Ontology • Methodology • Governance
+    </footer>
+
   </div>
-
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:info@acefoundation.net">info@acefoundation.net</a></p>
-
-  <h2>GitHub</h2>
-  <p><a href="https://github.com/ACE-Foundation">github.com/ACE-Foundation</a></p>
-
-  <footer>
-    ACE Foundation — Ontology • Methodology • Governance
-  </footer>
 
 </body>
 </html>
