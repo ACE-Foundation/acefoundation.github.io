@@ -8,7 +8,7 @@
       background: #000;
       color: #d0d0d0;
       font-family: sans-serif;
-      max-width: 720px;
+      max-width: 900px;
       margin: 60px auto;
       line-height: 1.7;
       padding: 40px;
@@ -16,29 +16,34 @@
       border-radius: 10px;
     }
 
-    header {
-      margin-bottom: 50px;
-      padding-bottom: 30px;
+    /* Header layout: logga + text i rad */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
       border-bottom: 1px solid #222;
+      padding-bottom: 30px;
+      margin-bottom: 40px;
     }
 
     img.logo {
-      width: 240px;
-      margin-bottom: 20px;
+      width: 180px;
       filter: drop-shadow(0 0 12px rgba(255,255,255,0.25));
     }
 
-    h1 {
-      font-size: 1.8rem;
+    .title-block h1 {
       margin: 0;
+      font-size: 1.8rem;
       color: #fff;
       letter-spacing: 0.6px;
+      text-align: left;
     }
 
-    p {
+    .title-block p {
+      margin: 8px 0 0;
+      max-width: 500px;
       color: #c0c0c0;
-      margin: 0 auto 20px;
-      max-width: 520px;
+      text-align: left;
     }
 
     h2 {
@@ -64,29 +69,30 @@
       font-size: 0.85rem;
       color: #777;
       letter-spacing: 0.5px;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <header>
+  <div class="header">
     <img class="logo" src="Foundation.jpg" alt="ACE Foundation logo">
-    <h1>ACE Foundation</h1>
-    <p>Applied Clarity & Evidence — a framework for transparent, reproducible and institutionally robust governance.</p>
-  </header>
 
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:info@acefoundation.net">info@acefoundation.net</a></p>
+    <div class="title-block">
+      <h1>ACE Foundation</h1>
+      <p>Applied Clarity & Evidence — a framework for transparent, reproducible and institutionally robust governance.</p>
+    </div>
+  </div>
 
-    <h2>GitHub</h2>
-    <p><a href="https://github.com/ACE-Foundation">github.com/ACE-Foundation</a></p>
-  </section>
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:info@acefoundation.net">info@acefoundation.net</a></p>
 
-  <footer style="margin-top:60px; color:#777; font-size:0.85rem;">
-  ACE Foundation — Ontology • Methodology • Governance
+  <h2>GitHub</h2>
+  <p><a href="https://github.com/ACE-Foundation">github.com/ACE-Foundation</a></p>
+
+  <footer>
+    ACE Foundation — Ontology • Methodology • Governance
   </footer>
-
 
 </body>
 </html>
